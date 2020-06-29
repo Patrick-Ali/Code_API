@@ -7,6 +7,10 @@ app.config["DEBUG"] = True
 def home():
 	return"<h1>Hello World<h1>"
 
-@app.route('/file-upload',
+@app.route('/upload', methods=['GET'])
+def upload_file():
+	return"<h1>Upload file<h1>"
+
+
 
 app.run(host='0.0.0.0', port='5010')
